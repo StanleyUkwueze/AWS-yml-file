@@ -69,3 +69,7 @@ Resources:
                    Pattern:PULL_REQUEST_CREATED, PULL_REQUEST_UPDATED
                  - Type:BASE_REF
                    Pattern:!Sub ^refs/heads/master$
+       Environment:
+        Type:WINDOWS_CONTAINER
+        ComputerType:BUILD_GENERAL_SMALL
+        Image:aws/codebuild/standard:4.0
